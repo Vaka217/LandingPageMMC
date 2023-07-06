@@ -9,7 +9,9 @@ const Footer = () => {
                 <p className="text-sky-950 text-center font-semibold m-4">
                     © Market of Many Cards 2023 - All Rights Reserved
                 </p>
-                <AiOutlineGithub size={64} color="rgb(8 47 73)" className="self-justify-end mr-12" />
+                <a href="https://github.com/Vaka217/MarketOfManyCards" className="self-justify-end mr-12">
+                    <AiOutlineGithub size={64} color="rgb(8 47 73)" />
+                </a>
         </footer>
     )
 };

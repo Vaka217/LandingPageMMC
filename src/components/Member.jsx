@@ -4,7 +4,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 
 const lore = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet vehicula dignissim. Suspendisse in iaculis mi. Donec elit mi, scelerisque quis tempus ut, facilisis id tellus. Aenean ut risus eu lorem ornare interdum eget ut eros. Praesent lacinia convallis vestibulum. Morbi diam orci, sollicitudin sit amet sodales vitae, egestas quis nibh. Proin pharetra vulputate imperdiet. Ut quis convallis arcu, eget."
 
-const Member = ({name, roles, image}) => {
+const Member = ({name, roles, image, github, linkedin, twitter}) => {
     return (
         <div className="col-span-1 rounded-xl bg-sky-200 p-4 flex justify-center items-center flex-col shadow-lg shadow-slate-900">
             <div className="flex justify-center items-center rounded-full shadow-xl w-56 h-56 overflow-hidden mt-4">
@@ -16,9 +16,15 @@ const Member = ({name, roles, image}) => {
                 {roles}
             </p>
             <div className="flex flex-row gap-4 mb-4">
-                <AiOutlineGithub size={36} color="rgb(8 47 73)" />
-                <BiLogoLinkedin size={36} color="rgb(8 47 73)" />
-                <AiOutlineTwitter size={36} color="rgb(8 47 73)" />
+                <a href={github} className='hover:scale-110 transition-all duration-500'>
+                    <AiOutlineGithub size={36} color="rgb(8 47 73)" />
+                </a>
+                <a href={linkedin} className='hover:scale-110 transition-all duration-500'>
+                    <BiLogoLinkedin size={36} color="rgb(8 47 73)" />
+                </a>
+                <a href={twitter} className='hover:scale-110 transition-all duration-500'>
+                    <AiOutlineTwitter size={36} color="rgb(8 47 73)" />
+                </a>
             </div>
         </div>
         )
