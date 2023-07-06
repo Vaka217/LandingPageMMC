@@ -8,7 +8,7 @@ const Feature = ({name, description, image}) => {
                 {description}
             </p>
             <div className="flex justify-center items-center mt-4 flex-1">
-                <img src={image} className="rounded-xl w-1/2"/>
+                <img src={image} className="rounded-xl w-3/4"/>
             </div>
         </div>
         )

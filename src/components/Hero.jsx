@@ -10,11 +10,11 @@ import { Button } from '@mui/material';
 const Hero = () => {
 
   return (
-    <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8 relative" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cardsBackground})`, backgroundSize: 'cover'  }}>
+    <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8 relative overflow-hidden" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cardsBackground})`, backgroundSize: 'cover'  }}>
       <div className="md:col-span-5 flex items-center justify-center p-8 z-10">
         <div className="ml-10">
-          <div className='bg-gradient-to-l from-sky-950 from-50% py-6 w-3/4 rounded-r-lg flex items-center mb-6'>
-            <h1 className="text-7xl font-bold text-white" style={{ textShadow: "4px 4px 4px rgb(6 40 59)"}}>
+          <div className='bg-gradient-to-l from-sky-950 from-50% py-6 pr-6 w-3/4 rounded-r-lg flex items-center mb-6'>
+            <h1 className="md:text-7xl text-5xl font-bold text-white" style={{ textShadow: "4px 4px 4px rgb(6 40 59)"}}>
               Market of Many Cards
             </h1>
           </div>
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <img src={jaceBackground} alt="Jace" className="absolute right-0 h-full z-0" />
+      <img src={jaceBackground} alt="Jace" className="absolute right-0 h-full z-0 object-contain hidden md:block" />
     </section>
   );
 };

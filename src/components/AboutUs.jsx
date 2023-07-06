@@ -3,7 +3,7 @@ import Member from "./Member";
 
 const AboutUs = () => {
     return (
-        <div className="flex flex-col items-center justify-center xl:h-[100vh] mb-8" id="aboutus">
+        <div className="flex flex-col items-center justify-center mb-8" id="aboutus">
             <h2 className="text-5xl text-slate-100 font-bold mt-8">About Us</h2>
             <div className="grid grid-cols-1 xl:grid-cols-4 gap-8 p-10 px-16 w-full">
                 <Member name="Gonzalo Cabaleiro" roles="Frontend Developer/Project Manager" image="https://cdn.discordapp.com/attachments/732360655658680452/1126222702152257716/14NYXqPVraSedJo6jD-5ZxxGcZTc6ADLb2adQSvz6j5zdKM-dZ-r1LbZSnpP4g6c.png" />

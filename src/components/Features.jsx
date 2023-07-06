@@ -5,8 +5,8 @@ const lore = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras impe
 
 const Features = () => {
     return (
-        <div className="flex flex-col items-center justify-center xl:h-[100vh]" id="features">
-            <h2 className="text-5xl text-slate-100 font-bold mt-8">Features</h2>
+        <div className="flex flex-col items-center justify-center mt-8" id="features">
+            <h2 className="text-5xl text-slate-100 font-bold">Features</h2>
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 p-10 px-16">
                 <Feature name="Search your favorite cards!" description={lore} image="https://cdn.discordapp.com/attachments/732360655658680452/1126191772222099456/feature1.png" />
                 <Feature name="Look for a specific card!" description={lore} image="https://cdn.discordapp.com/attachments/732360655658680452/1126195118785974383/feature2.png" />
