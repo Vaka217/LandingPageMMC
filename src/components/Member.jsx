@@ -10,9 +10,9 @@ const Member = ({name, roles, image}) => {
             <div className="flex justify-center items-center rounded-full shadow-xl w-56 h-56 overflow-hidden mt-4">
                 <img src={image} className="w-full object-fill"/>
             </div>
-            <h3 className="text-3xl font-bold my-4 text-sky-950">{name}</h3>
+            <h3 className="text-3xl font-bold my-4 text-sky-950 text-center">{name}</h3>
             <p className="text-center italic text-sky-950">{lore}</p>
-            <p className="text-sky-950 font-semibold text-xl my-4">
+            <p className="text-sky-950 font-semibold text-xl my-4 text-center">
                 {roles}
             </p>
             <div className="flex flex-row gap-4 mb-4">
