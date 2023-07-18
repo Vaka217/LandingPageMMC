@@ -2,9 +2,6 @@ import React from 'react';
 
 import cardsBackground from '../assets/cardsBackground.jpg';
 import jaceBackground from '../assets/jaceBackground.png';
-import GoogleStoreBadge from '../assets/GoogleStoreBadge.png';
-import AppleStoreBadge from '../assets/AppleStoreBadge.svg';
-
 import { Button } from '@mui/material';
 
 const Hero = () => {
@@ -21,14 +18,7 @@ const Hero = () => {
           <p className="font-semibold text-white mb-4 text-xl">
             Do you like Magic The Gathering? Us too! Market of Many Cards is a mobile app available for Android and iOS where you can buy and sell your MTG cards with other enthusiasts! Or even auction them and look for the highest bid!
           </p>
-          <div className="flex gap-2 items-center">
-            <a href='https://apps.apple.com/us/app/subway-surfers/id512939461' className='hover:scale-105 transition-all duration-500'>
-              <img src={AppleStoreBadge} className="h-12" />
-            </a>
-            <a href='https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=es_UY&gl=US' className='hover:scale-105 transition-all duration-500'>
-              <img src={GoogleStoreBadge} className="h-16" />
-            </a>
-          </div>
+          <Button href="https://mega.nz/file/B10mFKrI#sESpRZXBGfvJAqlvfefceRR5GC-an5VvMH2duu8Cr7g" variant="contained" style={{ backgroundColor: "rgb(6 40 59)", fontWeight: 600 }} size='large'>Download now</Button>
         </div>
       </div>
       <img src={jaceBackground} alt="Jace" className="absolute right-0 h-full z-0 object-contain hidden md:block" />
